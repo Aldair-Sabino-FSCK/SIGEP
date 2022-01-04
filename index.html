@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sistema de controle de matriculas Yara Jandira"/>
+    <meta name="author" content="Aldair Sabino" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>SIGEP</title>
+  </head>
+  <body>
+    <header>
+      <!--Cabecalho-->
+      <div class="cabecalho">
+        <div class="logo">
+          <a href="index.html"><span><abbr title="Sistema de gerenciamento de propinas">SIGEP</abbr></span></a>
+        </div>
+        <div class="div-form">
+          <label onclick="vemc()">Cadastrar</label>
+          <label onclick="vem()">Entrar</label>
+        </div>
+      </div>
+    </header>
+    
+      <button class="box" onclick="vemm()">
+        <div id="barra-1" class="barra-1"></div>
+        <div id="barra-2" class="barra-2"></div>
+        <div id="barra-3" class="barra-3"></div>
+        <button id="botaov" class="botao-invi" onclick="vaime()"></button>
+      </button>
+    
+    <nav id="menu-lateral" class="menu-lateral">
+      <a href="login.html">Entrar</a>
+      <a href="signup.html">Cadastrar</a>
+    </nav>
+    <div class="clear"></div>
+    <main class="conteudo">
+      <!--Conteudo-->
+      <div class="tutorial" id="tutorial">
+        <h1>SIGEP- Garante produtividade e flexibilidade no registro de propinas</h1>
+      </div>
+      
+      <div class="form-container-master" id="form-container-master">
+        <form id="form-container" action="">
+          <h1>Login</h1>
+          <label id="botao" onclick="vai()"></label>
+          <p><input type="email" name="email" id="email" placeholder="Email"></p>
+          <input type="password" name="pass" id="pass" placeholder="Palavra-passe">
+          <input type="submit" value="Login">
+        </form>
+
+        <form id="form-container2" action="">
+          <h1>Cadastrar</h1>
+          <label id="botao2" onclick="vaic()"></label>
+          <p><input type="text" name="name" id="name" placeholder="Nome"></p>
+          <p><input type="text" name="sname" id="sname" placeholder="Sobrenome"></p>
+          <p><input type="email" name="email" id="email2" placeholder="Email"></p>
+          <p><input type="date" name="data" id="data" placeholder="Data"></p>
+          <p></p>
+          <input type="radio" name="sexo" id="sexomasc" checked><span>Masculino</span><br>
+          <input type="radio" name="sexo" id="sexofem"><span>Feminino</span><br>
+          <input type="radio" name="sexo" id="sexopersonalizado"><span>Outros</span><br>
+          <input type="password" name="pass" id="pass2" placeholder="Palavra-passe">
+          <input type="submit" value="Cadastrar">
+        </form>
+      </div>
+    </main>
+    <script src="assets/script.js"></script>
+    <footer>
+      <!--Rodape-->
+      <p>Todos os direitos Reservados</p>
+      <p>Yara Jandira</p>
+    </footer>
+  </body>
+  
+</html>

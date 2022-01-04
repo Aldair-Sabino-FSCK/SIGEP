@@ -1,0 +1,10 @@
+@font-face {/*Fonte importada*/
+    font-family: opensans;
+    src: url(../font/OpenSans-Light.ttf);
+}
+*{/*Reset do site*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: opensans,sans-serif;
+}

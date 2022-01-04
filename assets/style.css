@@ -1,0 +1,295 @@
+@font-face {/*Fonte importada*/
+    font-family: opensans;
+    src: url(../font/OpenSans-Light.ttf);
+}
+*{/*Reset do site*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: opensans,sans-serif;
+}
+*::-webkit-scrollbar{/*Barra de rolagem*/
+    overflow: scroll;
+   
+}
+*::-webkit-scrollbar-thumb{/* personalizacao da Barra de rolagem*/
+    background-color: rgb(180, 180, 180);
+    border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb:hover{/* Hover na Barra de rolagem*/
+    background-color: rgb(124, 124, 124);
+}
+abbr{
+    text-decoration: none;
+}
+body{/*Reset da altura*/
+    height: 100%;
+    overflow-x: hidden;
+   
+}
+body{
+    background-image: url(../Animation/operating-system-animate\ \(1\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+header{/*Conteiner das divs no cabecalho*/
+    position: fixed;
+    width: 100%;
+    height: 13vh;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 37%, rgba(0,0,0,0.8491771708683473) 100%);
+    z-index: 2;
+}
+.cabecalho{/*div onde tem as divs do cabecalho*/
+    position: relative;
+    width: 100%;
+}
+.clear{/*Div para dar espaco entre o conteudo e o cabecalho por causa do position fixed*/
+    height: 15vh;
+}
+
+.logo{/* div Logotipo*/
+    display: inline-block;
+    font-size: 2.8vh;
+    font-weight: bold;
+    padding: 2%;
+    width: 49%;
+}
+.logo span{/*Texto do logotipo*/
+    color: rgb(255, 252, 252);
+    margin-left: 2%;
+    text-shadow: 3px 3px 7px rgb(0, 0, 0);
+}
+.div-form{/*Div dos itens dos itens de cadastro*/
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    padding: 2%;
+}
+.div-form span,label,.div-form > input{ /*Elementos login e signin*/
+    color: white;
+    font-size: 2.8vh;
+    font-weight: bold;
+    margin: 4%;
+    text-shadow: 3px 3px 7px black;
+    cursor: pointer;
+    padding: 1%;
+    border: 1px solid white;
+    border-radius: 8%;
+}
+.div-form span:hover{/* hover dos elementos login e signin*/
+    color: rgb(3, 3, 3);
+    text-shadow: 3px 3px 7px #66666665;
+}
+.div-form a, .logo a{/*Todo o texto do cabecalho*/
+    text-decoration: none;
+}
+#botao,#botao2{/*Botoes para fechar os formularios*/
+    position: relative;
+    top: -5%;
+    left: 44%;
+    background-image: url(../img/seta.png);
+    width: 1.7vw;
+    height: 0.5vh;
+    background-position: center;
+    background-size: 1vw 1.8vh;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: #ffffff00;
+    padding: 3%;
+}
+.form-container-master{/*Div de delimitacao do formulario*/
+    padding-top: 2%;
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    margin-left:10%;
+    display: none;
+    
+}
+#form-container{ /*formulario*/
+    padding: 30px;
+    width: 25vw;
+    height: 70vh;
+    background-color: white;
+    transform: translateX(290%);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    
+}
+#form-container h1, #form-container2 h1{
+    font-weight: normal;
+}
+#form-container input[type=submit],#form-container2 input[type=submit]{/*Botoes de submit para ambos formularios*/
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 2vh;
+    width: 7vw;
+    height: 4vh;   
+}
+#form-container2{/*formulario de cadastro*/
+    padding: 30px;
+    width: 25vw;
+    height: 70vh;
+    background-color: white;
+    transform: translateX(300%);
+    border: 1px solid #000000;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    overflow-y: scroll;
+}
+#form-container2::-webkit-scrollbar-track-piece{/*scrollbar do cadastrp*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.form-container-master h1{/*Titulo do formulario*/
+    margin-left: -2%;
+    font-size: 3vh;
+    color: #413c3c;
+}
+form input{ /*Elementos de entrada do formulario*/
+    margin: 4%;
+    width: 15vw;
+    height: 4vh;
+    border: 1px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    outline: none;
+}
+form input::placeholder{/*Texto dentro dos elementos de entrada do formulario*/
+    color: #000000;
+}
+#form-container2 input[type = radio]{/*personalizacao dos estilos dos sexos*/
+    width: 2vw;
+    height: 2vh;
+
+}
+.conteudo{ /*Conteudo do site*/
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 700px;
+}
+.tutorial{/*Conteiner onde se encontram as instrucoes do sistema*/
+    margin: 0 10px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0);
+    padding: 100px;
+}
+.tutorial h1{
+    font-size: 6vh;
+    font-weight: normal;
+    position: relative;
+    top: 50%;
+    color: #000000;
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+}
+.tutorial::-webkit-scrollbar-track-piece{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}   
+footer{/*Container rodape*/
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    height: 9vh;
+    width: 100%;
+    background-color: #ffffff;
+    border-top: 1px solid black;
+}
+footer p{/*Texto dento do rodape*/
+    position: relative;
+    color: black;
+    font-size: 2vh;
+    top: 2vh;
+}   
+.menu-lateral{
+    position: fixed;
+    color: #ffffff;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+.menu-lateral a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 3vh;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+.box{
+    position: fixed;
+    z-index: 3;
+    height: 9vh;
+    width: 7vw;
+    padding-top: 0.7%;
+    padding-bottom: 1%;
+    left: 90%;
+    display: none;
+    cursor: pointer;
+    border: 0;
+}
+.barra-1,.barra-2,.barra-3{
+    margin-top: 20%;
+    margin-bottom: 20%;
+    height: 0.4vh;
+    width: 6vw;
+    background-color: #ffffff;
+    transition: 0.3s ease;
+    
+}
+.botao-invi{
+    position: fixed;
+    height: 10vh;
+    width: 12vw;
+    right: 1%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    z-index: 5 !important;
+    display: none;
+    cursor: pointer;
+    
+}
+@media screen and (max-width: 1200px) {
+    #form-container,#form-container2{ /*formulario*/
+        top: 9%;
+        height: 52vh;
+    }
+}
+@media  screen and (max-width: 800px) {
+    .logo{
+        width: 100%;
+        padding-top: 5%;
+        text-align: center;
+    }
+    .div-form{/*Div dos itens dos itens de cadastro*/
+        display: none;
+    }
+    .menu-lateral{
+        display: inline-block;
+        transform: translate(100%);
+    }
+    .box{
+        display: inline-block;
+        background-color: transparent;
+    }
+    .tutorial h1{
+        font-size: 4vh;
+        top: 10%;
+    }
+}

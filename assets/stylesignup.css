@@ -1,0 +1,85 @@
+@font-face {
+    font-family: mf;
+    src: url(../font/OpenSans-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MF ;
+}
+button{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 8vw;
+    height: 6vh;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    font-size: 4vh;
+    color: white;
+}
+header{
+    height: 14vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 37%, rgba(0,0,0,0.8491771708683473) 100%);
+}
+.logo{/* div Logotipo*/
+    position: relative;
+    margin-top: 4%;
+    left: 25%;
+    text-align: center;
+    display: inline-block;
+    font-size: 2.8vh;
+    font-weight: bold;
+    padding: 2%;
+    width: 49%;
+}
+.logo span{/*Texto do logotipo*/
+    color: rgb(255, 252, 252);
+    margin-left: 2%;
+    text-shadow: 3px 3px 7px rgb(0, 0, 0);
+}
+.form-container4{
+    text-align: center;
+    margin-top: 20%;
+
+}
+.form-container4 h1{
+    font-size: 4vh;
+    font-weight: lighter;
+    margin-bottom: 9%;
+}
+.form-container4 input{
+    font-size: 2.5vh;
+    margin: 8%;
+    margin: 4%;
+    width: 50vw;
+    height: 4vh;
+    border: 1px solid #000000;
+    border-top: none;
+    border-left: none;
+    border-right: none; 
+    outline: none;
+}
+.form-container4 input[type =radio]{
+    width: 4vw;
+    height: 4vh;
+}
+.form-container4 input[type = submit]{
+    border: none;
+    box-shadow: 3px 3px 8px rgb(128, 128, 128);
+    height: 6vh;
+    border-radius: 20px;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+}
+.form-container4 input[type = submit]:hover{
+    background-color: rgb(99, 99, 99);
+    color: #ffffff;
+    box-shadow: none;
+}
