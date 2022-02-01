@@ -8,72 +8,87 @@
     <link rel="stylesheet" href="assets/styledash.css">
 </head>
 <body>
-    <header class="cabecalho">
-        <p>Controle das propinas</p>
-    </header>
-    <main class="cont">
-        <div class="table table1">
-            <div class="row row1">
-                <div class="cell cell1">Nome: <span class="elements">Aldair</span></div>
-                <div class="cell cell1">Idade: <span class="elements">18</span></div>
-                <div class="cell cell1">Classe: <span class="elements">12a</span></div>
-                <div class="cell cell1">Curso: <span class="elements">Informatica</span></div>
+        <div class="cont">
+            <div class="table table1">
+                <div class="row row1">
+                    <div class="cell cell1">Nome: <span class="elements">Aldair</span></div>
+                    <div class="cell cell1">Idade: <span class="elements">18</span></div>
+                    <div class="cell cell1">Classe: <span class="elements">12a</span></div>
+                    <div class="cell cell1">Curso: <span class="elements">Informatica</span></div>
+                </div>
             </div>
+            <div class="table table2">
+                <div class="row row2">
+                    <div class="cell cell2 cellmes">Mêses</div>
+                    <div class="cell cell2 cellmes">Estado</div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Janeiro</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Feveriero</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Março</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Abril</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Maio</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Junho</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Julho</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Agosto</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Setembro</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Outubro</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Novembro</div>
+                    <div class="cell cell2"></div>
+                </div>
+                <div class="row row2">
+                    <div class="cell cell2">Dezembro</div>
+                    <div class="cell cell2"></div>
+                </div>
+            </div>
+            <button onclick="abre()" class="abre" id="abre"></button>
+            <button onclick="fecha()" class="fecha" id="fecha"></button>
         </div>
-        <div class="table table2">
-            <div class="row row2">
-                <div class="cell cell2 cellmes">Mêses</div>
-                <div class="cell cell2 cellmes">Estado</div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Janeiro</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Feveriero</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Março</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Abril</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Maio</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Junho</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Julho</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Agosto</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Setembro</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Outubro</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Novembro</div>
-                <div class="cell cell2"></div>
-            </div>
-            <div class="row row2">
-                <div class="cell cell2">Dezembro</div>
-                <div class="cell cell2"></div>
-            </div>
+    <div class="registro" id="registro">
+        <div class="elementos-registro">
+            <form action="">
+                <p>Qual mês foi pago?</p>
+                <input type="month" name="mes" id="mes">
+                <br>
+                <input type="submit" value="Registrar">
+            </form>
         </div>
-    </main>
+    </div>
+    <footer>
+        <p>Todos os direitos reservados</p>
+        <p>Lorem ipsum dolor amet</p>
+    </footer>
+    <p style="color: transparent; height: 0.1px;"></p>
+    <script src="assets/scriptdash.js"></script>
 </body>
 </html>

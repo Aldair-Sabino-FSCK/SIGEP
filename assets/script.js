@@ -11,6 +11,7 @@ function vai(){
     document.getElementById('form-container').style.transform = 'translate(290%)'
     document.getElementById('form-container-master').style.display = 'none'
     document.getElementById('tutorial').style.width = '100%'
+
 }
 
 function vaic(){
@@ -31,7 +32,7 @@ function vemm(){
     document.getElementById('botaov').style.display = 'inherit'
 }
 function vaime(){
-    console.log('uihs9h') 
+
     document.getElementById('menu-lateral').style.transform = 'translateX(100%)'
     document.getElementById('barra-3').style.display = 'block'
     document.getElementById('barra-1').style.transform = 'rotate(0deg)'
